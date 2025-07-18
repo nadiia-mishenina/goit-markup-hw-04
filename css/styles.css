@@ -129,6 +129,11 @@ img {
   display: inline-block;
 }
 
+.header-navigation-a.current {
+  color: #404bbf;
+  position: relative;
+}
+
 .header-navigation-a:hover,
 .header-navigation-list:hover,
 .header-navigation-a:focus,
@@ -418,6 +423,12 @@ img {
 .portfolio-card-contant {
   position: relative;
   overflow: hidden;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0 0 4px 4px;
+  padding: 32px 0;
 }
 .portfolio-card-text {
   position: absolute;
@@ -469,7 +480,11 @@ img {
 
 .footer .container {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
+}
+
+.footer-logo-text-wrapper {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -488,12 +503,19 @@ img {
   display: inline-block;
 }
 .footer-text {
+  letter-spacing: 0.02em;
+  max-width: 320px;
+  margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 264px;
 }
+
+.footer-socials-contant {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-socials-contant {
   max-width: 208px;
 }
@@ -513,13 +535,13 @@ img {
 }
 .footer-list-link {
   display: flex;
-  background-color: #4d5ae5;
-  border-radius: 50%;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 .footer-socials-icon {
   fill: #f4f4fd;
